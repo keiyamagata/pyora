@@ -16,4 +16,10 @@ pnpm dev
 bun dev
 ```
 
-Ga naar [http://localhost:3000](http://localhost:3000) om het resultaat te bekijken.
+Ga naar http://localhost:3000 om het resultaat te bekijken.
+
+## Extra
+
+Ik was begonnen aan een loading animatie met de logo, maar door tijdsgebrek heb ik het niet helemaal kunnen implementeren. Deze kan je wel bekijken via http://localhost:3000/loading-animation
+
+Voor de rest zijn er ook nog plaatsen waar refactorings wel kunnen gebeuren, maar de basis voor de website zit erin.
