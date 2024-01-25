@@ -5,7 +5,7 @@ import RadialGradient from "./RadialGradient";
 const Hero = () => {
   return (
     <section className="relative h-[100dvh] overflow-hidden flex justify-center">
-      <div className="z-30 mt-24">
+      <div className="z-30 mt-32">
         <Headline />
       </div>
       <div

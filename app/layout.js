@@ -1,4 +1,6 @@
 import localFont from "next/font/local";
+import Header from "./components/header/Header";
+
 import "./globals.css";
 
 const bdogrotesk = localFont({
@@ -29,7 +31,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${bdogrotesk.className} bg-primary`}>{children}</body>
+      <body className={`${bdogrotesk.className} bg-primary relative`}>
+        <div className="hidden lg:block">
+          <Header />
+        </div>
+        {children}
+      </body>
     </html>
   );
 }

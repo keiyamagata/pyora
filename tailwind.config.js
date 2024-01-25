@@ -14,6 +14,9 @@ module.exports = {
         title: ["4rem", "70.4px"],
         small: ["0.875rem", "0.875rem"],
       },
+      gridTemplateColumns: {
+        header: "2fr 3fr 2fr",
+      },
     },
   },
   plugins: [],
