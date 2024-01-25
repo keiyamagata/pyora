@@ -1,7 +1,9 @@
+import Hero from "./components/hero/Hero";
+
 const Home = () => {
   return (
-    <main className="h-[100dvh] flex justify-center items-center">
-      <p>Pyora</p>
+    <main className="min-h-[100dvh]">
+      <Hero />
     </main>
   );
 };
