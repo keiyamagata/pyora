@@ -1,9 +1,9 @@
-import Hero from "./components/hero/Hero";
+import Calculator from "../components/calculator/Calculator";
 
 const Home = () => {
   return (
     <main className="bg-primary">
-      <Hero />
+      <Calculator />
     </main>
   );
 };

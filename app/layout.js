@@ -32,7 +32,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${bdogrotesk.className} bg-primary relative`}>
+      <body className={`${bdogrotesk.className} relative`}>
         <div className="hidden lg:block">
           <Header />
         </div>

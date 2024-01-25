@@ -8,21 +8,23 @@ const Header = () => {
     <header className="fixed z-50 w-full text-sm text-white uppercase top-4">
       <div className="container grid h-10 grid-cols-3 gap-4 mx-auto">
         <div className="w-full">
-          <Image
-            src="/images/pyora-logo.svg"
-            alt="pyora logo"
-            priority
-            width={124}
-            height={31}
-            sizes="(max-width: 768px) 124px, 124px"
-            className="object-contain"
-          />
+          <Link href="/">
+            <Image
+              src="/images/pyora-logo.svg"
+              alt="pyora logo"
+              priority
+              width={124}
+              height={31}
+              sizes="(max-width: 768px) 124px, 124px"
+              className="object-contain"
+            />
+          </Link>
         </div>
 
         <nav className="">
           <ul className="flex items-center justify-center h-full gap-8">
             <li>
-              <Link href="#">Home</Link>
+              <Link href="/">Home</Link>
             </li>
             <li>
               <Link href="#">Bikes</Link>
