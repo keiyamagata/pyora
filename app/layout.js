@@ -2,6 +2,7 @@ import localFont from "next/font/local";
 import Header from "./components/header/Header";
 
 import "./globals.css";
+import Footer from "./components/footer/Footer";
 
 const bdogrotesk = localFont({
   src: "./fonts/BDOGrotesk-VF.woff2",
@@ -36,6 +37,7 @@ export default function RootLayout({ children }) {
           <Header />
         </div>
         {children}
+        <Footer />
       </body>
     </html>
   );
