@@ -29,13 +29,16 @@ const Headline = () => {
       >
         Lease your bike
       </p>
-      <h2 ref={titleRef} className="text-3xl opacity-0 mb-14 md:text-title">
+      <h2
+        ref={titleRef}
+        className="text-4xl opacity-0 mb-14 md:text-5xl lg:text-title"
+      >
         Commute with ease.<span className="block">Your company bike.</span>
       </h2>
       <Link
         ref={ctaRef}
         href="/calculator"
-        className="px-6 py-3 text-sm uppercase transition bg-black rounded-full opacity-0 hover:bg-gray-700"
+        className="px-6 py-3 text-sm uppercase transition bg-black rounded-full opacity-0 hover:bg-white hover:text-black"
       >
         Calculate your price
       </Link>

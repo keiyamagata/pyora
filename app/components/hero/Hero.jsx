@@ -29,8 +29,8 @@ const Hero = () => {
       <div
         ref={imageRef}
         className="
-      z-20 absolute -bottom-[5rem] left-[50%] -translate-x-1/2 w-[500px] aspect-[1640/908]
-      sm:-bottom-[10rem]
+      z-20 absolute -bottom-[5rem] left-[50%] -translate-x-1/2 w-[550px] aspect-[1640/908]
+      sm:-bottom-[7.5rem] sm:w-[750px]
       md:-bottom-[10rem] md:w-[900px]
       lg:-bottom-[15rem] lg:w-[936px]
       "

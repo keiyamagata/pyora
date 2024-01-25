@@ -1,12 +1,17 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 
 const Calculator = () => {
   const [distance, setDistance] = useState(200);
   const [price, setPrice] = useState(3890);
-  const [wage, setWage] = useState(0);
+  const [wage, setWage] = useState(null);
+  const [savedMoney, setSavedMoney] = useState(0);
+
+  useEffect(() => {
+    setSavedMoney(wage / (price / distance));
+  }, [distance, price, wage]);
 
   return (
     <section className="container relative flex flex-col items-center gap-10 mb-20 text-white">
@@ -52,9 +57,9 @@ const Calculator = () => {
           <input
             type="number"
             id="wage"
-            placeholder="200"
+            placeholder="2500"
             className="px-4 py-3 rounded-md bg-[rgba(0,0,0,0.08)]"
-            value={wage}
+            value={wage || ""}
             onChange={(e) => setWage(e.target.value)}
           />
         </div>
@@ -63,7 +68,7 @@ const Calculator = () => {
           <p className="text-[#4F4F4F] text-xl pb-1">
             You&apos;ll save each month
           </p>
-          <p className="text-5xl font-bold">{70} euros</p>
+          <p className="text-5xl font-bold">{Math.round(savedMoney)} euros</p>
         </div>
       </div>
 

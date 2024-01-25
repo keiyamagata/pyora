@@ -6,6 +6,7 @@ import Image from "next/image";
 import HamburgerIcon from "./HamburgerIcon";
 import Xmark from "./Xmark";
 import LogoBlack from "../LogoBlack";
+import { menuItems } from "@/utils";
 
 const MobileHeader = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -52,26 +53,17 @@ const MobileHeader = () => {
           </div>
           <nav className="mt-20 border-b">
             <ul className="flex flex-col gap-8 mb-20">
-              <li>
-                <Link href="/" className="text-3xl" onClick={toggleIsOpen}>
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="text-3xl">
-                  Bikes
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="text-3xl">
-                  Story
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="text-3xl">
-                  Leasing
-                </Link>
-              </li>
+              {menuItems.map((item) => (
+                <li key={item.name}>
+                  <Link
+                    href={item.path}
+                    className="text-3xl"
+                    onClick={toggleIsOpen}
+                  >
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </nav>
 
