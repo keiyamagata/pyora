@@ -1,8 +1,9 @@
-const LogoBlack = () => {
+const LogoBlack = ({ className }) => {
   return (
     <svg
-      width="124"
-      height="32"
+      className={className || "w-[124px] h-[32px]"}
+      // width="124"
+      // height="32"
       viewBox="0 0 124 32"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
