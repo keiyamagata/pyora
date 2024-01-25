@@ -5,13 +5,13 @@ import LogoBlack from "../LogoBlack";
 
 const Footer = () => {
   return (
-    <footer className="h-[400px] bg-white text-black">
-      <section className="container py-16">
-        <div className="flex justify-between pb-16 border-b">
+    <footer className="text-black bg-white">
+      <section className="px-2 py-16 md:container">
+        <div className="flex flex-col gap-16 pb-16 border-b lg:flex-row lg:justify-between">
           <div>
             <LogoBlack />
             <nav className="mt-8">
-              <ul className="flex gap-8 uppercase text-small">
+              <ul className="flex flex-col gap-8 uppercase text-small lg:flex-row">
                 <li>
                   <Link href="#">Home</Link>
                 </li>
@@ -52,9 +52,9 @@ const Footer = () => {
             </p>
           </div>
         </div>
-        <div className="flex justify-between mt-8 text-[#4F4F4F]">
+        <div className="flex flex-col lg:flex-row gap-8 justify-between mt-8 text-[#4F4F4F]">
           <nav>
-            <ul className="flex gap-6 uppercase text-small">
+            <ul className="flex flex-col gap-6 uppercase text-small lg:flex-row">
               <li>
                 <Link href="#">Privacy policy</Link>
               </li>
@@ -67,7 +67,7 @@ const Footer = () => {
             </ul>
           </nav>
           <span className="text-xs">
-            &copy; 2023 Relume. All rights reserved
+            &copy; 2023 Relume. All rights reserved.
           </span>
         </div>
       </section>
