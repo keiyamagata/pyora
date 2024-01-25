@@ -3,6 +3,7 @@ import Header from "./components/header/Header";
 
 import "./globals.css";
 import Footer from "./components/footer/Footer";
+import MobileHeader from "./components/header/MobileHeader";
 
 const bdogrotesk = localFont({
   src: "./fonts/BDOGrotesk-VF.woff2",
@@ -35,6 +36,9 @@ export default function RootLayout({ children }) {
       <body className={`${bdogrotesk.className} relative`}>
         <div className="hidden lg:block">
           <Header />
+        </div>
+        <div className="block lg:hidden">
+          <MobileHeader />
         </div>
         {children}
         <Footer />
